@@ -1,3 +1,16 @@
 .pageBackdrop {
     background: #3D7DCA;
 }
+
+.pokeYellow {
+    background-color: #FFCB05;
+}
+
+.pokeCard {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: 0 0 10px #FFCB05; /* this adds the "card" effect */
+}
+
+.pokeImg {
+    border: 2px solid black!important; 
+}

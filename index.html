@@ -8,21 +8,127 @@
 <!-- Bootstrap 5 CSS -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 <!-- Bootstrap 5 JS Bundle -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+<script src="index.js"></script>
 </head>
 <body class="pageBackdrop">
-    <!-- As a heading -->
+    <!-- Navbar -->
     <nav class="navbar navbar-dark bg-dark shadow">
         <div class="container-fluid">
         <span class="navbar-brand mb-0">
+            <!-- Nav Logo -->
             <a href="https://fontmeme.com/pokemon-font/"><img src="https://fontmeme.com/permalink/210520/87d7d48cca9765d924d1e6ad2a00c814.png" alt="pokemon-font" border="0"></a>
         </span>
         </div>
     </nav>
+
+    <!-- Main Page -->
     <div class="container">
+        <div class="alert pokeYellow fw-bold shadow text-center m-0" role="alert">
+            Search our database for all Generation 1 Pokemon! Good luck hunting!
+        </div>
+        <div class="card bg-light">
+            <div class="card-body">
+                <form class="d-flex">
+                    <input id="poke-search-input" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button id="poke-search-btn" class="btn btn-outline-primary" type="submit">Search</button>
+                </form>
+            </div>
+          </div>
+        
+        <div class="pokeContainer">
+            <div class="row">
+                <div class="card pokeCard shadow-lg p-0 m-2" id="abra" style="width: 20rem;">
+                    <img src="poke-imgs/abra.jpg" class="card-img-top pokeImg" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Abra <small class="text-muted">#63</small></h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <b>Type:</b> 
+                            <br>
+                            Psychic
+                        </li>
+                        <li class="list-group-item">
+                            <b>Stats:</b>
+                            <br>
+                            <table class="table table-secondary m-0 border border-dark">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">HP</th>
+                                    <th scope="col">ATK</th>
+                                    <th scope="col">DEF</th>
+                                    <th scope="col">Sp. ATK</th>
+                                    <th scope="col">Sp. DEF</th>
+                                    <th scope="col">Speed</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>25</td>
+                                    <td>20</td>
+                                    <td>15</td>
+                                    <td>105</td>
+                                    <td>55</td>
+                                    <td>90</td>
+                                  </tr>
+                                </tbody>
+                            </table>                
+                        </li>
+                    </ul>
+                </div>
+        
+                <div class="card pokeCard p-0 m-2" id="aerodactyl" style="width: 20rem;">
+                    <img src="poke-imgs/aerodactyl.jpg" class="card-img-top pokeImg" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Aerodactyl <small class="text-muted">#142</small></h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <b>Type:</b> 
+                            <br>
+                            Rock | Flying
+                        </li>
+                        <li class="list-group-item">
+                            <b>Stats:</b>
+                            <br>
+                            <table class="table table-secondary m-0 border border-dark">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">HP</th>
+                                    <th scope="col">ATK</th>
+                                    <th scope="col">DEF</th>
+                                    <th scope="col">Sp. ATK</th>
+                                    <th scope="col">Sp. DEF</th>
+                                    <th scope="col">Speed</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>80</td>
+                                    <td>105</td>
+                                    <td>65</td>
+                                    <td>60</td>
+                                    <td>75</td>
+                                    <td>130</td>
+                                  </tr>
+                                </tbody>
+                            </table>                
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
         
     </div>
+    
 
 </body>
 </html>
